@@ -1,0 +1,34 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.header.header_mp {
+  background: #1f1f1f;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: 1px 1px 35px 1px rgba(0, 0, 0, 0.17);
+  }
+}
+
