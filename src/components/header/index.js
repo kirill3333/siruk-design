@@ -14,7 +14,7 @@ const Header = ({ isBlack }) => {
           <Link to="/">
               <Logo isBlack />
           </Link>
-          <Menu isBlack />
+          <Menu isActive={isActive} isBlack />
       </div>
     )
 };
