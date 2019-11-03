@@ -1,0 +1,40 @@
+.item {
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -o-transition:all .35s ease;
+  -ms-transition:all .3s ease;
+  color: #252222;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-right: 76px;
+  font-weight: bold;
+}
+
+.item:hover {
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -o-transition:all .35s ease;
+  -ms-transition:all .3s ease;
+  color: #dcdcdc;
+}
+
+
+.dash {
+  width: 18px;
+  height: 1px;
+  background: #fff;
+  display: inline-block;
+  vertical-align: 3px;
+  margin-right: 12px;
+}
+
+.item:hover .dash {
+  transform: rotate(-45deg);
+  background: #c7c7c7;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .35s ease;
+  -ms-transition: all .3s ease;
+}

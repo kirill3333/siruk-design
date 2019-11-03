@@ -1,0 +1,9 @@
+.menu {
+  position: absolute;
+  top: 65px;
+  right: 90px;
+}
+
+.menu a:last-child {
+  margin-right: 0px;
+}

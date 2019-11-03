@@ -1,34 +1,58 @@
-.wrapper {
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  position: relative;
-}
+html,body{width:100%;min-width:320px}
+body{background: #fff;font:normal 15px 'Roboto',sans-serif;color:#262421;line-height:1.4;overflow-x:hidden}
 
-.logo {
-  position: absolute;
-  top: 50px;
-  left: 90px;
-}
+body::-webkit-scrollbar-track{}
+body::-webkit-scrollbar{width:8px;background-color:#FFF}
+body::-webkit-scrollbar-thumb{border-radius:0px;background-color:#D0D0D0}
 
-.header {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-}
+::selection{background:#ccc}
+::-moz-selection{background:#ccc}
 
-.header.header_mp {
-  background: #1f1f1f;
-}
+a{text-decoration:none;outline:none;color: #262421}
+a:hover{text-decoration:none;color:#d0d0d0}
 
-@media only screen and (max-width: 767px) {
-  .header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    height: 60px;
-    background: #fff;
-    box-shadow: 1px 1px 35px 1px rgba(0, 0, 0, 0.17);
-  }
-}
+/*.menu.menu_inner a:hover, .menu.menu_inner a.active {*/
+/*  color: #dcdcdc;*/
+/*}*/
+
+/*.menu_inner span.menu_s {*/
+/*  width: 18px;*/
+/*  height: 1px;*/
+/*  background: #fff;*/
+/*  display: inline-block;*/
+/*  vertical-align: 3px;*/
+/*  margin-right: 12px;*/
+/*}*/
+
+/*.menu.menu_inner a:hover .menu_s, .menu.menu_inner a.active .menu_s {*/
+/*  transform: rotate(-45deg);*/
+/*  background: #c7c7c7;*/
+/*  -webkit-transition: all .3s ease;*/
+/*  -moz-transition: all .3s ease;*/
+/*  -o-transition: all .35s ease;*/
+/*  -ms-transition: all .3s ease;*/
+/*}*/
+
+
+/*.menu a:hover .menu_s {*/
+/*  transform: rotate(-45deg);*/
+/*  background: #c7c7c7;*/
+/*  -webkit-transition: all .3s ease;*/
+/*  -moz-transition: all .3s ease;*/
+/*  -o-transition: all .35s ease;*/
+/*  -ms-transition: all .3s ease;*/
+/*}*/
+
+/*.menu a .menu_s {*/
+/*  transform: rotate(0deg);*/
+/*  background: #fff;*/
+/*  -webkit-transition: all .3s ease;*/
+/*  -moz-transition: all .3s ease;*/
+/*  -o-transition: all .35s ease;*/
+/*  -ms-transition: all .3s ease;*/
+/*}*/
+
+/*.menu.menu_inner_i a .menu_s {*/
+/*  background-color: #fff;*/
+/*}*/
 

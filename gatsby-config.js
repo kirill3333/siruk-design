@@ -1,8 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Дизайн студия Ольги Сирук | SIRUK DESIGN`,
+    description: ``,
     author: `@gatsbyjs`,
+    menuLinks: [
+      {
+        name: 'Проекты',
+        link: '/works'
+      },
+      {
+        name: 'Услуги',
+        link: '/services'
+      },
+      {
+        name: 'Отзывы',
+        link: '/feedbacks'
+      },
+      {
+        name: 'Блог',
+        link: '/blog'
+      },
+      {
+        name: 'Контакты',
+        link: '/contacts'
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
