@@ -1,0 +1,123 @@
+.button {
+  display: none;
+  position: absolute;
+  top: 39px;
+  right: 56px;
+  width: 67px;
+  height: 67px;
+}
+
+/*HAMBURGER*/
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 67px;
+  height: 67px;
+  cursor: pointer;
+  /* text-align: center; */
+  background: transparent;
+  /* border-radius: 50%; */
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -o-transition:all .35s ease;
+  -ms-transition:all .3s ease;
+}
+
+.hamburger:hover{
+  opacity: .7;
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -o-transition:all .35s ease;
+  -ms-transition:all .3s ease;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+  width: 28px;
+  border-radius: 2px;
+  height: 2px;
+  /* top: 2px; */
+  background: #252222;
+}
+
+.bar {
+  position: relative;
+  transform: translateY(33px) translateX(20px);
+  background: #252222;
+  transition: all 0ms 300ms;
+}
+
+.animate {
+
+}
+
+.bar.animate {
+  background: transparent;
+}
+
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  background: #252222;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background: #252222;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+  top: 0;
+  width: 28px;
+  top: 0px;
+  left: 0px;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  background: #fff;
+}
+
+.bar.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  width: 28px;
+  top: 0px;
+  left: 0px;
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  background: #fff;
+}
+
+.bar.bar_i {
+  background: #fff;
+}
+
+
+.bar.bar_i, .bar.bar_i:after, .bar.bar_i:before {
+  background: #fff;
+}
+.bar.bar_i.animate {
+  background: transparent;
+}
+
+@media only screen and (max-width: 767px) {
+  .button {
+    display: block;
+    position: fixed;
+    top: -5px;
+    right: 13px;
+    width: 67px;
+    height: 67px;
+    z-index: 10;
+  }
+}

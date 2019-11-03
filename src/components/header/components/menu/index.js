@@ -4,7 +4,7 @@ import {graphql, useStaticQuery} from "gatsby";
 import Item from './item';
 import styles from "./styles.module.css";
 
-const Menu = () => {
+const Menu = ({isBlack}) => {
     const data = useStaticQuery(graphql`
         query {
         site {
@@ -21,7 +21,7 @@ const Menu = () => {
     return <div className={styles.menu}>
         {
             data.site.siteMetadata.menuLinks.map((link, index) => (
-              <Item key={index} link={link.link} label={link.name} />
+              <Item key={index} link={link.link} label={link.name} isBlack={isBlack} />
             ))
         }
     </div>

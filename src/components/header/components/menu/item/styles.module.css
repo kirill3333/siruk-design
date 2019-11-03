@@ -1,4 +1,4 @@
-.item {
+.item_black {
   -webkit-transition:all .3s ease;
   -moz-transition:all .3s ease;
   -o-transition:all .35s ease;
@@ -12,12 +12,17 @@
   font-weight: bold;
 }
 
-.item:hover {
+.item_black:hover {
   -webkit-transition:all .3s ease;
   -moz-transition:all .3s ease;
   -o-transition:all .35s ease;
   -ms-transition:all .3s ease;
   color: #dcdcdc;
+}
+
+.item {
+  composes: item_black;
+  color: #fff;
 }
 
 
@@ -30,7 +35,12 @@
   margin-right: 12px;
 }
 
-.item:hover .dash {
+.dash_black {
+  background: #252222;
+  composes: dash;
+}
+
+.item_black:hover .dash, .item_black:hover .dash_black, .item:hover .dash, .item:hover .dash_black {
   transform: rotate(-45deg);
   background: #c7c7c7;
   -webkit-transition: all .3s ease;
