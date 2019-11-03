@@ -6,23 +6,23 @@ module.exports = {
     menuLinks: [
       {
         name: 'Проекты',
-        link: '/works'
+        link: '/works',
       },
       {
         name: 'Услуги',
-        link: '/services'
+        link: '/services',
       },
       {
         name: 'Отзывы',
-        link: '/feedbacks'
+        link: '/feedbacks',
       },
       {
         name: 'Блог',
-        link: '/blog'
+        link: '/blog',
       },
       {
         name: 'Контакты',
-        link: '/contacts'
+        link: '/contacts',
       },
     ],
   },
@@ -50,13 +50,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
-        }
-      }
-    }
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
