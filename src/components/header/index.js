@@ -15,9 +15,9 @@ const Header = ({ isBlack }) => {
         onMenuClick={() => setIsActive(!isActive)}
       />
       <Link to="/">
-        <Logo isBlack />
+        <Logo isBlack={isBlack} />
       </Link>
-      <Menu isActive={isActive} isBlack />
+      <Menu isActive={isActive} isBlack={isBlack} />
     </div>
   )
 }
